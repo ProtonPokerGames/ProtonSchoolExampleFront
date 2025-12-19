@@ -3,7 +3,7 @@
 import type { NavSection } from "./dashboard-shell"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
-import { Home, Sparkles, Code, Play, BarChart3, GraduationCap, Trophy, Award } from "lucide-react"
+import { Home, Sparkles, Code, Play, BarChart3, GraduationCap, Trophy, Award, BookOpen, Library } from "lucide-react"
 
 interface DashboardNavProps {
   activeSection: NavSection
@@ -14,6 +14,8 @@ export function DashboardNav({ activeSection, onSectionChange }: DashboardNavPro
   const navItems = [
     { id: "home" as const, label: "Главная", icon: Home },
     { id: "generator" as const, label: "Генератор", icon: Sparkles },
+    { id: "variants" as const, label: "Варианты", icon: BookOpen },
+    { id: "catalog" as const, label: "Каталог", icon: Library },
     { id: "practice" as const, label: "Практика", icon: Play },
     { id: "editor" as const, label: "Редактор", icon: Code },
     { id: "analytics" as const, label: "Прогресс", icon: BarChart3 },
